@@ -34,7 +34,7 @@ const TodoApp = () => {
 
   return (
     <div className="flex justify-center">
-      <div className="w-2/6 bg-blue-200 h-screen border-4 border-red-500">
+      <div className="w-2/6 bg-blue-200 h-100% border-4 border-red-500">
         <div className="flex justify-center flex-col">
           <h2 className="text-2xl text-blue-900 text-center font-bold">
             {" "}
@@ -62,8 +62,9 @@ const TodoApp = () => {
               style={{ marginLeft: "20px" }}
               key={todo.todo.id}
             >
-              <div>
+              <div className="p-2">
                 <input
+                  className="mr-4"
                   type="checkbox"
                   checked={todo.todo.completed}
                   onChange={(e) => {
