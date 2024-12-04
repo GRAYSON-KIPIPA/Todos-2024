@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useTodoStore } from "../store/todoStore";
 import { Todo } from "../store/todoStore";
 import { v4 as uuidv4 } from "uuid";
